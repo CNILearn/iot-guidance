@@ -26,7 +26,7 @@ az iot hub create -g $RESOURCE_GROUP -n $IOTHUB_NAME --sku S3 -l $LOCATION --uni
 az cosmosdb create --resource-group $RESOURCE_GROUP -n $COSMOSDB_NAME --enable-automatic-failover false --kind GlobalDocumentDB --default-consistency-level Strong
 
 # create Azure Cosmos Database
-az cosmosdb database create -g $RESOURCE_GROUP -n $COSMOSDB_NAME \
+az cosmosdb sql database create -g $RESOURCE_GROUP -n $COSMOSDB_NAME \
   --db-name pcs-storage
 ```
 
