@@ -34,7 +34,7 @@ cd src/CloudGateway/IoTHubDeployment
 
 az group create -n <resource-group> -l <location>
 
-az group deployment create --name <deployment-name> \
+az deployment group create --name <deployment-name> \
   -g <resource-group> --template-file azuredeploy.json \
   --parameters azuredeploy.parameters.json
 ```
